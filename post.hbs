@@ -22,7 +22,7 @@
                 </div>
                 <div class="summer-post-title bg-check">
                     <h1>{{title}}</h1>
-                    <p>{{#if author.name}}by <strong>{{author}}</strong> &#8212;{{/if}} {{> tags_loop}} <strong><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time></strong></p>
+                    <p>{{#if author.name}}por <strong>{{author}}</strong> &#8212;{{/if}} {{> tags_loop}} <strong><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time></strong></p>
                 </div>
             </header>
             <button class="trigger bg-check" data-info="Click here"><span>Trigger</span></button>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="summer-post-title bg-check">
                     <h1>{{title}}</h1>
-                    <p>{{#if author.name}}by <strong>{{author}}</strong> &#8212;{{/if}} {{> tags_loop}} <strong><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time></strong></p>
+                    <p>{{#if author.name}} por <strong>{{author}}</strong> &#8212;{{/if}} {{> tags_loop}} <strong><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time></strong></p>
                 </div>
                 <div class="bg-img">
                     {{#if image}}
@@ -90,7 +90,7 @@
             </div>
             <div class="summer-post-title">
                 <h1>{{title}}</h1>
-                <p>{{#if author.name}}by <strong>{{author}}</strong> &#8212;{{/if}} {{> tags_loop}} <strong><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time></strong></p>
+                <p>{{#if author.name}}por <strong>{{author}}</strong> &#8212;{{/if}} {{> tags_loop}} <strong><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time></strong></p>
             </div>
         </main>
         {{/has}}
@@ -152,7 +152,7 @@
                         <img src="{{author.image}}" class="summer-post-author-avatar" alt="{{author.name}}">
                     {{/if}}
                     {{#if author.name}}
-                        <span class="author-label">Author</span>
+                        <span class="author-label">Autora</span>
                         <h1>{{#author}}<a href="{{url}}" class="author-link-name">{{name}}</a>{{/author}}</h1>
                     {{/if}}
                     {{#if author.website}}
